@@ -1,8 +1,5 @@
 project_name: urlencodec
 release:
-  github:
-    owner: jorditcmp
-    name: homebrew-urlencodec
   name_template: '{{.Tag}}'
 brew:
   commit_author:
