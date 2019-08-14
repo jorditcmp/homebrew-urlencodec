@@ -15,12 +15,9 @@ jobs:
 
     - name: Check out code into the Go module directory
       uses: actions/checkout@master
-      working-directory: ${{ go.module-path }}
     
     - name: Test
-      working-directory: ${{ go.module-path }}
       run: go test -v ./...
 
     - name: Build
-      working-directory: ${{ go.module-path }}
       run: go build -v .
