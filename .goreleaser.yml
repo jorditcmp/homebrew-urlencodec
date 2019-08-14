@@ -1,6 +1,7 @@
 project_name: urlencodec
-release:
-  name_template: '{{.Tag}}'
+env_files:
+  github_token: ./.goreleaser_github_token
+
 brew:
   commit_author:
     name: jorditcmp
