@@ -23,9 +23,9 @@ brews:
 
     github:
       owner: jorditcmp
-      name: urlencodec
+      name: homebrew-urlencodec
 
-    url_template: "https://github.com/jorditcmp/urlencodec/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+    url_template: "https://github.com/jorditcmp/homebrew-urlencodec/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
 
     commit_author:
       name: jorditcmp
