@@ -1,0 +1,39 @@
+project_name: urlencodec
+
+env_files:
+  github_token: ./.goreleaser_github_token
+
+builds:
+- binary: urlencodec
+
+archives:
+  -
+    id: urlencodec
+
+checksum:
+  name_template: "{{ .ProjectName }}_checksums.txt"
+  algorithm: sha256
+
+brews:
+  -
+    name: urlencodec
+
+    ids:
+    - urlencodec
+
+    github:
+      owner: jorditcmp
+      name: urlencodec
+
+    url_template: "https://github.com/jorditcmp/homebrew-urlencodec/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+
+    commit_author:
+      name: jorditcmp
+      email: jordi.tarruella@teamcmp.com
+
+    homepage: "https://github.com/jorditcmp/homebrew-urlencodec"
+
+    description: "URL Encode and Decode CLI"
+
+    install: |
+      bin.install "urlencodec"
