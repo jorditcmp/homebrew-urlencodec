@@ -43,12 +43,4 @@ archive:
 checksum:
   name_template: '{{ .ProjectName }}_{{ .Version }}_checksums.txt'
 dist: dist
-sign:
-  cmd: gpg
-  args:
-  - --output
-  - $signature
-  - --detach-sig
-  - $artifact
-  signature: ${artifact}.sig
-  artifacts: none
+
